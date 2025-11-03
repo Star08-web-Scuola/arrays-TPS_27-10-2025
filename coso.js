@@ -39,15 +39,25 @@ for (let i = 0; i < 100; i++) {
 }
 
 for (let i = 0; i < numbers.length; i++) {
-    const div = document.createElement('div');
-    div.textContent = numbers[i];
-    output1.appendChild(div);
+    const tr = document.createElement('tr');
+    const td1 = document.createElement('td');
+    td1.textContent = i;
+    const td2 = document.createElement('td');
+    td2.textContent = numbers[i];
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    output1.appendChild(tr);
 }
 
 for (let i = 0; i < numbers2.length; i++) {
-    const div = document.createElement('div');
-    div.textContent = numbers2[i];
-    output2.appendChild(div);
+    const tr = document.createElement('tr');
+    const td1 = document.createElement('td');
+    td1.textContent = i;
+    const td2 = document.createElement('td');
+    td2.textContent = numbers2[i];
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    output2.appendChild(tr);
 }
 
 mediaOutput.textContent = `Media: ${media}`;
